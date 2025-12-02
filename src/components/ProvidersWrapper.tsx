@@ -5,7 +5,7 @@ import Providers from './Providers'
 import type { ChildrenType, Direction } from '@/types/types'
 
 // Util Imports
-import { getMode, getSettingsFromCookie } from '@core/utils/serverHelpers'
+import { getMode, getSettingsFromCookie } from '@/utils/serverHelpers'
 
 type Props = ChildrenType & { direction: Direction }
 

@@ -11,7 +11,7 @@ import type { Mode } from '@/types/types'
 import themeConfig from '@configs/themeConfig'
 
 // Hook Imports
-import { useObjectCookie } from '@core/hooks/useObjectCookie'
+import { useObjectCookie } from '@/hooks/useObjectCookie'
 
 // Settings type
 export type Settings = {

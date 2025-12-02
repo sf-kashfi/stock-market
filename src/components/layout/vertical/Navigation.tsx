@@ -18,7 +18,7 @@ import Logo from '@components/layout/shared/Logo'
 import useVerticalNav from '@menu/hooks/useVerticalNav'
 
 // Style Imports
-import navigationCustomStyles from '@core/styles/vertical/navigationCustomStyles'
+import navigationCustomStyles from '@/styles/navigationCustomStyles'
 
 const StyledBoxForShadow = styled('div')(({ theme }) => ({
   top: 60,

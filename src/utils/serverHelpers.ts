@@ -4,7 +4,7 @@ import 'server-only'
 import { cookies } from 'next/headers'
 
 // Type Imports
-import type { Settings } from '@core/contexts/settingsContext'
+import type { Settings } from '@/contexts/settingsContext'
 
 // Config Imports
 import themeConfig from '@configs/themeConfig'

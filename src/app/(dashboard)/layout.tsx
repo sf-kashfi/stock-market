@@ -2,8 +2,8 @@
 import type { ChildrenType } from '@/types/types'
 
 // Layout Imports
-import LayoutWrapper from '@layouts/LayoutWrapper'
-import VerticalLayout from '@layouts/VerticalLayout'
+import LayoutWrapper from '@/components/layout/LayoutWrapper'
+import VerticalLayout from '@/components/layout/vertical/VerticalLayout'
 
 // Component Imports
 import ProvidersWrapper from '@components/ProvidersWrapper'

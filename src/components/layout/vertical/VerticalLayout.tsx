@@ -8,10 +8,10 @@ import classnames from 'classnames'
 import type { ChildrenType } from '@/types/types'
 
 // Component Imports
-import LayoutContent from './components/vertical/LayoutContent'
+import LayoutContent from './LayoutContent'
 
 // Util Imports
-import { verticalLayoutClasses } from './utils/layoutClasses'
+import { verticalLayoutClasses } from '../layoutClasses'
 
 type VerticalLayoutProps = ChildrenType & {
   navigation?: ReactNode

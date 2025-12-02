@@ -6,7 +6,7 @@ import type { CSSObject } from '@emotion/styled'
 import themeConfig from '@configs/themeConfig'
 
 // Util Imports
-import { verticalLayoutClasses } from '@layouts/utils/layoutClasses'
+import { verticalLayoutClasses } from '@/components/layout/layoutClasses'
 
 type StyledHeaderProps = {
   overrideStyles?: CSSObject

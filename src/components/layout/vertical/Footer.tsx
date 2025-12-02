@@ -1,8 +1,40 @@
-// Component Imports
-import LayoutFooter from '@layouts/components/vertical/Footer'
+'use client'
 
-const Footer = () => {
-  return <LayoutFooter><div></div></LayoutFooter>
+// Third-party Imports
+import classnames from 'classnames'
+import type { CSSObject } from '@emotion/styled'
+
+// Type Imports
+import type { ChildrenType } from '@/types/types'
+
+// Util Imports
+import { verticalLayoutClasses } from '@/components/layout/layoutClasses'
+
+// Styled Component Imports
+import StyledFooter from '@/components/layout/vertical/StyledFooter'
+
+type Props = ChildrenType & {
+  overrideStyles?: CSSObject
+}
+
+const Footer = (props: Props) => {
+  // Props
+  const { children, overrideStyles } = props
+
+  return (
+    <StyledFooter
+      overrideStyles={overrideStyles}
+      className={classnames(
+        verticalLayoutClasses.footer,
+        verticalLayoutClasses.footerContentCompact,
+        verticalLayoutClasses.footerStatic,
+        verticalLayoutClasses.footerDetached,
+        'is-full'
+      )}
+    >
+      <div className={verticalLayoutClasses.footerContentWrapper}>{children}</div>
+    </StyledFooter>
+  )
 }
 
 export default Footer

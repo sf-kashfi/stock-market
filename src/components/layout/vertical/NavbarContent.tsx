@@ -14,7 +14,7 @@ import ModeDropdown from '@components/layout/shared/ModeDropdown'
 
 
 // Util Imports
-import { verticalLayoutClasses } from '@layouts/utils/layoutClasses'
+import { verticalLayoutClasses } from '@/components/layout/layoutClasses'
 
 const NavbarContent = () => {
   return (

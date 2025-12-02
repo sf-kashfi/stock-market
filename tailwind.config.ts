@@ -8,11 +8,7 @@ const config: Config = {
   },
 
   important: '#__next',
-
-  plugins: [
-    require('tailwindcss-logical')
-  ],
-
+  plugins: [require('tailwindcss-logical')],
   theme: {
     extend: {}
   }

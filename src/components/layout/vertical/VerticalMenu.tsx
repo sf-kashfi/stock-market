@@ -6,30 +6,22 @@ import { useTheme } from '@mui/material/styles'
 import PerfectScrollbar from 'react-perfect-scrollbar'
 
 // Type Imports
-import type { VerticalMenuContextProps } from '@menu/components/vertical-menu/Menu'
+import { VerticalNavContextProps } from '@/contexts/verticalNavContext'
 
 // Component Imports
-import { Menu, SubMenu, MenuItem, MenuSection } from '@menu/vertical-menu'
+import Menu from '@components/menu/Menu'
+import MenuItem from '@/components/menu/MenuItem'
 
 // Hook Imports
-import useVerticalNav from '@menu/hooks/useVerticalNav'
-
-// Styled Component Imports
-import StyledVerticalNavExpandIcon from '@menu/styles/vertical/StyledVerticalNavExpandIcon'
+import useVerticalNav from '@/hooks/useVerticalNav'
 
 // Style Imports
 import menuItemStyles from '@/styles/menuItemStyles'
 
 type RenderExpandIconProps = {
   open?: boolean
-  transitionDuration?: VerticalMenuContextProps['transitionDuration']
+  transitionDuration?: VerticalNavContextProps['transitionDuration']
 }
-
-const RenderExpandIcon = ({ open, transitionDuration }: RenderExpandIconProps) => (
-  <StyledVerticalNavExpandIcon open={open} transitionDuration={transitionDuration}>
-    <i className='ri-arrow-right-s-line' />
-  </StyledVerticalNavExpandIcon>
-)
 
 const VerticalMenu = ({ scrollMenu }: { scrollMenu: (container: any, isPerfectScrollbar: boolean) => void }) => {
   // Hooks
@@ -52,7 +44,6 @@ const VerticalMenu = ({ scrollMenu }: { scrollMenu: (container: any, isPerfectSc
     >
       <Menu
         menuItemStyles={menuItemStyles(theme)}
-        renderExpandIcon={({ open }) => <RenderExpandIcon open={open} transitionDuration={transitionDuration} />}
         renderExpandedMenuItemIcon={{ icon: <i className='ri-circle-line' /> }}
       >
         <MenuItem href='/'>در یک نگاه</MenuItem>

@@ -13,7 +13,7 @@ import { useUpdateEffect } from 'react-use'
 import type { CSSObject } from '@emotion/styled'
 
 // Type Imports
-import type { ChildrenType, MenuItemElement, MenuItemExactMatchUrlProps, RootStylesType } from '../../types'
+import type { ChildrenType, MenuItemElement, MenuItemExactMatchUrlProps, RootStylesType } from '@/types/types'
 
 // Component Imports
 import MenuButton from './MenuButton'
@@ -23,14 +23,12 @@ import useVerticalNav from '../../hooks/useVerticalNav'
 import useVerticalMenu from '../../hooks/useVerticalMenu'
 
 // Util Imports
-import { renderMenuIcon } from '../../utils/menuUtils'
-import { menuClasses } from '../../utils/menuClasses'
+import { renderMenuIcon } from '../../utils/menu/menuUtils'
+import { menuClasses } from '../../utils/menu/menuClasses'
 
 // Styled Component Imports
-import StyledMenuLabel from '../../styles/StyledMenuLabel'
-import StyledMenuPrefix from '../../styles/StyledMenuPrefix'
-import StyledMenuSuffix from '../../styles/StyledMenuSuffix'
-import StyledVerticalMenuItem from '../../styles/vertical/StyledVerticalMenuItem'
+import StyledMenuLabel from '../../styles/menu/StyledMenuLabel'
+import StyledVerticalMenuItem from '@/styles/menu/vertical/StyledVerticalMenuItem'
 
 export type MenuItemProps = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'prefix'> &
   RootStylesType &
@@ -156,13 +154,6 @@ const MenuItem: ForwardRefRenderFunction<HTMLLIElement, MenuItemProps> = (props,
           isBreakpointReached
         })}
 
-        {/* Menu Item Prefix */}
-        {prefix && (
-          <StyledMenuPrefix className={menuClasses.prefix} rootStyles={getMenuItemStyles('prefix')}>
-            {prefix}
-          </StyledMenuPrefix>
-        )}
-
         {/* Menu Item Label */}
         <StyledMenuLabel
           className={menuClasses.label}
@@ -171,13 +162,6 @@ const MenuItem: ForwardRefRenderFunction<HTMLLIElement, MenuItemProps> = (props,
         >
           {children}
         </StyledMenuLabel>
-
-        {/* Menu Item Suffix */}
-        {suffix && (
-          <StyledMenuSuffix className={menuClasses.suffix} rootStyles={getMenuItemStyles('suffix')}>
-            {suffix}
-          </StyledMenuSuffix>
-        )}
       </MenuButton>
     </StyledVerticalMenuItem>
   )

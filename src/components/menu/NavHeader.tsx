@@ -2,10 +2,10 @@
 import styled from '@emotion/styled'
 
 // Type Imports
-import type { ChildrenType } from '../../types'
+import type { ChildrenType } from '@/types/types'
 
 // Util Imports
-import { verticalNavClasses } from '../../utils/menuClasses'
+import { verticalNavClasses } from '../../utils/menu/menuClasses'
 
 const StyledNavHeader = styled.div`
   padding: 15px;

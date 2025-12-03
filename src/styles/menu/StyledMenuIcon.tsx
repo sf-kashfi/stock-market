@@ -2,7 +2,7 @@
 import styled from '@emotion/styled'
 
 // Type Imports
-import type { RootStylesType } from '../types'
+import type { RootStylesType } from '@/types/types'
 
 const StyledMenuIcon = styled.span<RootStylesType>`
   display: flex;

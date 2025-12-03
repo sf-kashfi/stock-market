@@ -10,15 +10,16 @@ import Link from 'next/link'
 import { styled, useTheme } from '@mui/material/styles'
 
 // Component Imports
-import VerticalNav, { NavHeader } from '@menu/vertical-menu'
 import VerticalMenu from './VerticalMenu'
 import Logo from '@components/layout/shared/Logo'
 
 // Hook Imports
-import useVerticalNav from '@menu/hooks/useVerticalNav'
+import useVerticalNav from '@/hooks/useVerticalNav'
 
 // Style Imports
 import navigationCustomStyles from '@/styles/navigationCustomStyles'
+import VerticalNav from './VerticalNav'
+import NavHeader from '@/components/menu/NavHeader'
 
 const StyledBoxForShadow = styled('div')(({ theme }) => ({
   top: 60,

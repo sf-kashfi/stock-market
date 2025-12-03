@@ -8,7 +8,7 @@ import Link from 'next/link'
 import type { LinkProps } from 'next/link'
 
 // Type Imports
-import type { ChildrenType } from '../types'
+import type { ChildrenType } from '@/types/types'
 
 type RouterLinkProps = LinkProps &
   Partial<ChildrenType> & {

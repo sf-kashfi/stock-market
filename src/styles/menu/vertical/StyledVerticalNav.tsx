@@ -2,11 +2,11 @@
 import styled from '@emotion/styled'
 
 // Type Imports
-import type { VerticalNavState } from '../../contexts/verticalNavContext'
-import type { VerticalNavProps } from '../../components/vertical-menu/VerticalNav'
+import type { VerticalNavState } from '@/contexts/verticalNavContext'
+import type { VerticalNavProps } from '@/components/layout/vertical/VerticalNav'
 
 // Util Imports
-import { verticalNavClasses } from '../../utils/menuClasses'
+import { verticalNavClasses } from '../../../utils/menu/menuClasses'
 
 type StyledVerticalNavProps = VerticalNavProps & Pick<VerticalNavState, 'isBreakpointReached' | 'transitionDuration'>
 

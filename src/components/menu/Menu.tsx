@@ -18,19 +18,19 @@ import type {
   RootStylesType,
   RenderExpandIconParams,
   RenderExpandedMenuItemIcon
-} from '../../types'
+} from '@/types/types'
 
 // Util Imports
-import { menuClasses } from '../../utils/menuClasses'
+import { menuClasses } from '../../utils/menu/menuClasses'
 
 // Styled Component Imports
-import StyledVerticalMenu from '../../styles/vertical/StyledVerticalMenu'
+import StyledVerticalMenu from '@/styles/menu/vertical/StyledVerticalMenu'
 
 // Style Imports
-import styles from '../../styles/styles.module.css'
+import styles from '@/styles/menu/styles.module.css'
 
 // Default Config Imports
-import { verticalSubMenuToggleDuration } from '../../defaultConfigs'
+import { verticalSubMenuToggleDuration } from '../../configs/defaultConfigs'
 
 export type MenuSectionStyles = {
   root?: CSSObject

@@ -6,13 +6,13 @@ import type { ReactElement, ReactNode } from 'react'
 import type { CSSObject } from '@emotion/styled'
 
 // Type Imports
-import type { ChildrenType, RenderExpandedMenuItemIcon } from '../types'
+import type { ChildrenType, RenderExpandedMenuItemIcon } from '@/types/types'
 
 // Util Imports
 import { menuClasses } from './menuClasses'
 
 // Styled Component Imports
-import StyledMenuIcon from '../styles/StyledMenuIcon'
+import StyledMenuIcon from '../../styles/menu/StyledMenuIcon'
 
 type RenderMenuIconParams = {
   level?: number
@@ -54,9 +54,6 @@ export const confirmUrlInChildren = (children: ChildrenType['children'], url: st
   return false
 }
 
-/*
- * Render all the icons for Menu Item and SubMenu components for all the levels more than 0
- */
 export const renderMenuIcon = (params: RenderMenuIconParams) => {
   const { icon, level, active, disabled, styles, renderExpandedMenuItemIcon, isBreakpointReached } = params
 

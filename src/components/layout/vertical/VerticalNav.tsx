@@ -9,26 +9,28 @@ import classnames from 'classnames'
 import type { CSSObject } from '@emotion/styled'
 
 // Type Imports
-import type { BreakpointType } from '../../types'
+import type { BreakpointType } from '@/types/types'
 
 // Context Imports
-import type { VerticalNavState } from '../../contexts/verticalNavContext'
+import type { VerticalNavState } from '@/contexts/verticalNavContext'
 
 // Hook Imports
-import useMediaQuery from '../../hooks/useMediaQuery'
-import useVerticalNav from '../../hooks/useVerticalNav'
+import useMediaQuery from '@/hooks/useMediaQuery'
+import useVerticalNav from '@/hooks/useVerticalNav'
 
 // Util Imports
-import { verticalNavClasses } from '../../utils/menuClasses'
+import { verticalNavClasses } from '../../../utils/menu/menuClasses'
 
 // Styled Component Imports
-import StyledBackdrop from '../../styles/StyledBackdrop'
-import StyledVerticalNav from '../../styles/vertical/StyledVerticalNav'
-import StyledVerticalNavContainer from '../../styles/vertical/StyledVerticalNavContainer'
-import StyledVerticalNavBgColorContainer from '../../styles/vertical/StyledVerticalNavBgColorContainer'
+import StyledBackdrop from '@/styles/menu/StyledBackdrop'
+import StyledVerticalNav from '@/styles/menu/vertical/StyledVerticalNav'
+import StyledVerticalNavContainer from '../../../styles/menu/vertical/StyledVerticalNavContainer'
+import StyledVerticalNavBgColorContainer from '../../../styles/menu/vertical/StyledVerticalNavBgColorContainer'
+
+
 
 // Default Config Imports
-import { defaultBreakpoints, verticalNavToggleDuration } from '../../defaultConfigs'
+import { defaultBreakpoints, verticalNavToggleDuration } from '../../../configs/defaultConfigs'
 
 export type VerticalNavProps = HTMLAttributes<HTMLHtmlElement> & {
   width?: VerticalNavState['width']

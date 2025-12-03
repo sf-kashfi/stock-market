@@ -4,7 +4,7 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 // Context Imports
-import { VerticalNavProvider } from '@menu/contexts/verticalNavContext'
+import { VerticalNavProvider } from '@/contexts/verticalNavContext'
 import { SettingsProvider } from '@/contexts/settingsContext'
 import ThemeProvider from '@components/theme'
 
